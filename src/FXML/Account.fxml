@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="450.0" prefWidth="750.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.AccountController">
+   <left>
+      <VBox prefHeight="462.0" prefWidth="251.0" style="-fx-background-color: #13123A;" BorderPane.alignment="CENTER">
+         <children>
+            <VBox alignment="CENTER" prefHeight="160.0" prefWidth="251.0">
+               <VBox.margin>
+                  <Insets top="50.0" />
+               </VBox.margin>
+               <children>
+                  <ImageView fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../assets/user.png" />
+                     </image>
+                  </ImageView>
+                  <Label id="account_user_field" alignment="CENTER" contentDisplay="CENTER" prefHeight="33.0" prefWidth="57.0" text="User" textAlignment="CENTER" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Label>
+               </children>
+            </VBox>
+            <VBox prefHeight="200.0" prefWidth="100.0">
+               <children>
+                  <HBox alignment="CENTER" prefHeight="45.0" prefWidth="251.0">
+                     <children>
+                        <ImageView fitHeight="30.0" fitWidth="42.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../assets/menu_account_icon.jpg" />
+                           </image>
+                        </ImageView>
+                        <Label id="account_applications_tab" fx:id="applicationLabel" onMouseClicked="#openApplication" prefHeight="34.0" prefWidth="154.0" text="Applications" textFill="WHITE">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                           <padding>
+                              <Insets left="15.0" />
+                           </padding>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" layoutX="10.0" layoutY="10.0" prefHeight="45.0" prefWidth="200.0">
+                     <children>
+                        <ImageView fitHeight="30.0" fitWidth="42.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../assets/menu_account_icon.jpg" />
+                           </image>
+                        </ImageView>
+                        <Label id="account_schedules_tab" fx:id="schedulesLbel" onMouseClicked="#openSchedules" prefHeight="34.0" prefWidth="154.0" text="Schedules" textFill="WHITE">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                           <padding>
+                              <Insets left="15.0" />
+                           </padding>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" layoutX="10.0" layoutY="56.0" prefHeight="45.0" prefWidth="200.0">
+                     <children>
+                        <ImageView fitHeight="30.0" fitWidth="42.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../assets/menu_account_icon.jpg" />
+                           </image>
+                        </ImageView>
+                        <Label id="account_documents_tab" fx:id="documents_tab_field" onMouseClicked="#openDocuments" prefHeight="34.0" prefWidth="154.0" text="Documents" textFill="WHITE">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                           <padding>
+                              <Insets left="15.0" />
+                           </padding>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" layoutX="10.0" layoutY="101.0" prefHeight="45.0" prefWidth="200.0">
+                     <children>
+                        <ImageView fitHeight="30.0" fitWidth="42.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../assets/menu_account_icon.jpg" />
+                           </image>
+                        </ImageView>
+                        <Label id="account_account_tab" fx:id="dashboardLabel" onMouseClicked="#openDashboard" prefHeight="34.0" prefWidth="154.0" text="Dashboard" textFill="WHITE">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                           <padding>
+                              <Insets left="15.0" />
+                           </padding>
+                        </Label>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+         </children>
+      </VBox>
+   </left>
+   <center>
+      <VBox alignment="CENTER" prefHeight="502.0" prefWidth="550.0" spacing="20.0" style="-fx-background-color: #0F0D2F;" stylesheets="@../css/styles.css" BorderPane.alignment="CENTER">
+         <children>
+            <Label prefHeight="30.0" prefWidth="518.0" text="Account Settings" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="25.0" />
+               </font>
+            </Label>
+            <VBox prefHeight="191.0" prefWidth="414.0" spacing="10.0">
+               <children>
+                  <Label prefHeight="52.0" prefWidth="443.0" text="Profile Details" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                  </Label>
+                  <HBox prefHeight="36.0" prefWidth="418.0">
+                     <children>
+                        <Label prefHeight="26.0" prefWidth="150.0" text="Name" textFill="WHITE">
+                           <font>
+                              <Font size="17.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="userFullName" prefHeight="26.0" prefWidth="150.0" text="NamePH" textFill="WHITE">
+                           <font>
+                              <Font size="17.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox layoutX="10.0" layoutY="40.0" prefHeight="36.0" prefWidth="418.0">
+                     <children>
+                        <Label prefHeight="26.0" prefWidth="150.0" text="Username" textFill="WHITE">
+                           <font>
+                              <Font size="17.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="usernameLabel" prefHeight="26.0" prefWidth="150.0" text="UserNamePH" textFill="WHITE">
+                           <font>
+                              <Font size="17.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox layoutX="10.0" layoutY="51.0" prefHeight="36.0" prefWidth="418.0">
+                     <children>
+                        <Label prefHeight="26.0" prefWidth="150.0" text="Email" textFill="WHITE">
+                           <font>
+                              <Font size="17.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="emailLabel" prefHeight="26.0" prefWidth="150.0" text="EmailPH" textFill="WHITE">
+                           <font>
+                              <Font size="17.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox layoutX="10.0" layoutY="184.0" prefHeight="36.0" prefWidth="418.0">
+                     <children>
+                        <Label prefHeight="26.0" prefWidth="150.0" text="Phone no." textFill="WHITE">
+                           <font>
+                              <Font size="17.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="phoneLabel" prefHeight="26.0" prefWidth="150.0" text="PhonePH" textFill="WHITE">
+                           <font>
+                              <Font size="17.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+            <Button id="account_editprofile_button" fx:id="account_edit_button" mnemonicParsing="false" prefHeight="30.0" prefWidth="150.0" text="Edit Profile" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Button>
+         </children>
+         <padding>
+            <Insets bottom="30.0" left="50.0" right="50.0" top="30.0" />
+         </padding>
+      </VBox>
+   </center>
+</BorderPane>

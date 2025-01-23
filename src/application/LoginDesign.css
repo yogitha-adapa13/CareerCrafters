@@ -1,0 +1,121 @@
+.grdient{
+	-fx-background-color: linear-gradient(to bottom right, #d33939, #6f3b21);
+}
+
+.light-gradient{
+	-fx-background-color: linear-gradient(to top right, #ff7f50, #6a5acd);
+	-fx-border-color: black;	
+	-fx-border-width: 10;
+}
+
+.white-form{
+	-fx-background-color: #fff;
+	
+}
+.head-label{
+	-fx-border-color: #d33939;
+	-fx-border-width: 0 0 0 3px;
+	-fx-padding: 0.0 0.0 0.0 5px;
+}
+
+.login-button{
+	-fx-background-color: linear-gradient(to bottom right, #d33939, #6f3b21);
+	-fx-background-radius: 5px;
+	-fx-cursor:hand;
+	-fx-text-fill: #fff;
+	-fx-font-size: 15px;
+}
+
+.login-button:hover{
+	-fx-background-color: linear-gradient(to bottom right, #ee4848, #a45a3b);
+}
+
+.textfield{
+	-fx-background-color: transparent;
+	-fx-border-color: linear-gradient(to bottom right, #d33939, #6f3b21);
+	-fx-border-width: .5px;
+}
+
+.create-button{
+	-fx-background-color: transparent;
+	-fx-cursor: hand;
+	-fx-text-fill: #fff;
+	-fx-border-color: linear-gradient(to bottom right, #e8f522, #e1880b);
+	-fx-border-width: 1px;
+	-fx-font-size: 15px;
+}
+
+.create-button:hover{
+	-fx-background-color: linear-gradient(to bottom right, #e8f522, #e1880b);
+	-fx-text-fill: #dd2c08;
+}
+
+.nav-dash{
+	-fx-background-color: linear-gradient(to bottom right, #e1880b, #e8f522);
+}
+
+.searchBar{
+	-fx-background-color: #000000;
+	-fx-background-radius: 100;
+}
+
+.searchButton{
+	-fx-background-color: linear-gradient(to bottom right, #d33939, #6f3b21);
+	-fx-background-radius: 0 30 30 0;
+}
+
+.searchButton:hover{
+	-fx-background-color: linear-gradient(to bottom right, #ff6262, #ab6544);
+	-fx-cursor: hand;
+}
+
+.searchTextArea{
+	-fx-prompt-text-fill: #000000;
+	-fx-background-color: linear-gradient(to bottom right, #e1880b, #e8f522);
+	/*-fx-border-color: linear-gradient(to bottom right, #d33939, #6f3b21);*/
+	-fx-background-radius: 30 0 0 30;
+}
+
+.foodcard{
+	-fx-background-color: #000000;
+	-fx-background-radius: 30;
+}
+.foodcard:hover{
+	-fx-cursor: hand;
+	-fx-background-color: rgba(0,0,0,0.92);
+}
+
+.shadow{
+	-fx-effect:dropshadow(three-pass-box, #e1880b, 10, 0, 10, 10);
+}
+
+.shadow2{
+	-fx-effect:dropshadow(three-pass-box, #d33939, 10, 0, 10, 10);
+}
+
+.cardButton{
+	-fx-background-radius: 100;
+	-fx-background-color: linear-gradient(to bottom right, #e1880b, #e8f522);
+}
+
+.cardButton:hover{
+	-fx-background-color: linear-gradient(to bottom right, #f3951c, #e8e618);
+	-fx-cursor: hand;
+}
+
+.black{
+	-fx-background-color: #000000;
+}
+
+.scroll-Pane{
+	-fx-background-color: rgba(0,0,0,0);
+}
+
+.dash-boardButtons{
+	-fx-background-color: linear-gradient(to bottom right, #d33939, #6f3b21);
+}
+
+.dash-boardButtons:hover{
+	-fx-background-color: linear-gradient(to bottom right, #ee4848, #a45a3b);
+	-fx-cursor: hand;
+}

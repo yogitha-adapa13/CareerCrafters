@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="330.0" prefWidth="459.0" style="-fx-background-color: #13123A; --fx-text-fill: white;" stylesheets="@../css/styles.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.AddScheduleController">
+   <children>
+      <VBox alignment="CENTER" layoutX="-1.0" layoutY="-1.0" prefHeight="338.0" prefWidth="469.0" spacing="10.0" style="-fx-background-color: #13123A; -fx-text-fill: white;" styleClass="textWhite" stylesheets="@../css/styles.css" AnchorPane.topAnchor="-1.0">
+         <children>
+            <Label alignment="CENTER" prefHeight="41.0" prefWidth="513.0" style="-fx-background-color: #0F0D2F;" styleClass="textWhite" text="Add Schedule" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <VBox alignment="CENTER" prefHeight="200.0" prefWidth="459.0" spacing="10.0" VBox.vgrow="ALWAYS">
+               <children>
+                  <Label alignment="CENTER" prefHeight="38.0" prefWidth="154.0" styleClass="textWhite" stylesheets="@../css/styles.css" text="Schedule Details" textAlignment="CENTER" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Label>
+                  <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="48.0" prefHeight="38.0" prefWidth="459.0" spacing="10.0" VBox.vgrow="ALWAYS">
+                     <children>
+                        <Label alignment="CENTER_RIGHT" prefHeight="38.0" prefWidth="120.0" styleClass="textWhite" stylesheets="@../css/styles.css" text="Schedule Name" textAlignment="CENTER" textFill="WHITE">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="ScheduleName" prefHeight="26.0" prefWidth="234.0" styleClass="textWhite" stylesheets="@../css/styles.css" HBox.hgrow="ALWAYS">
+                           <HBox.margin>
+                              <Insets left="30.0" />
+                           </HBox.margin>
+                        </TextField>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="85.0" prefHeight="38.0" prefWidth="459.0" spacing="10.0" VBox.vgrow="ALWAYS">
+                     <children>
+                        <Label alignment="CENTER" prefHeight="38.0" prefWidth="130.0" styleClass="textWhite" stylesheets="@../css/styles.css" text="Schedule Type" textAlignment="CENTER" textFill="WHITE">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Label>
+                        <ComboBox fx:id="scheduleType" prefHeight="26.0" prefWidth="170.0" promptText="Interview/Follow-up etc" HBox.hgrow="ALWAYS">
+                           <HBox.margin>
+                              <Insets left="20.0" />
+                           </HBox.margin>
+                        </ComboBox>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="143.0" prefHeight="38.0" prefWidth="459.0" spacing="10.0" VBox.vgrow="ALWAYS">
+                     <children>
+                        <Label alignment="CENTER" prefHeight="26.0" prefWidth="167.0" styleClass="textWhite" stylesheets="@../css/styles.css" text="Schedule Description" textAlignment="CENTER" textFill="WHITE">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="scheduleDescTF" prefHeight="26.0" prefWidth="197.0" styleClass="textWhite" stylesheets="@../css/styles.css" />
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="160.0" prefHeight="38.0" prefWidth="459.0" spacing="10.0" VBox.vgrow="ALWAYS">
+                     <children>
+                        <Label alignment="CENTER" prefHeight="33.0" prefWidth="134.0" styleClass="textWhite" stylesheets="@../css/styles.css" text="Schedule Date" textAlignment="CENTER" textFill="WHITE">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Label>
+                        <DatePicker fx:id="scheduleDate" promptText="Select Date" HBox.hgrow="ALWAYS">
+                           <HBox.margin>
+                              <Insets left="20.0" />
+                           </HBox.margin>
+                        </DatePicker>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+            <HBox alignment="CENTER" prefHeight="62.0" prefWidth="470.0" spacing="20.0" VBox.vgrow="ALWAYS">
+               <children>
+                  <Button fx:id="submitBtn" mnemonicParsing="false" onAction="#handleSubmit" prefHeight="54.0" prefWidth="142.0" text="Submit" textFill="WHITE" HBox.hgrow="ALWAYS">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                  </Button>
+               </children>
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+               <padding>
+                  <Insets bottom="10.0" left="40.0" right="30.0" />
+               </padding>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>
